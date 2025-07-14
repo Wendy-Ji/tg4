@@ -16,7 +16,7 @@ class tg4TestApp : public MooseApp
 public:
   static InputParameters validParams();
 
-  tg4TestApp(InputParameters parameters);
+  tg4TestApp(const InputParameters & parameters);
   virtual ~tg4TestApp();
 
   static void registerApps();

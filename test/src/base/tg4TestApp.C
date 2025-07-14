@@ -21,7 +21,7 @@ tg4TestApp::validParams()
   return params;
 }
 
-tg4TestApp::tg4TestApp(InputParameters parameters) : MooseApp(parameters)
+tg4TestApp::tg4TestApp(const InputParameters & parameters) : MooseApp(parameters)
 {
   tg4TestApp::registerAll(
       _factory, _action_factory, _syntax, getParam<bool>("allow_test_objects"));
